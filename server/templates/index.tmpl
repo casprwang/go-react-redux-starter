@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>go react starter</title>
+
+    {{ if .prd }}
+      <link href="/assets/bundle.css" rel="stylesheet">
+    {{ end }}
+
+  </head>
+  <body>
+    <div id='root'/>
+
+    {{ if .prd }}
+      <script src="/assets/bundle.js"></script>
+    {{ else }}
+      <script src='http://localhost:8337/assets/bundle.js'></script>
+    {{ end }}
+
+  </body>
+</html>
