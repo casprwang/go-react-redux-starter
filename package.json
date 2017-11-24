@@ -7,7 +7,9 @@
   "author": "wangsongiam <wangsongiam@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "webpack-dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js"
+    "webpack-dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
+    "server-dev": "gin --port 1111 --appPort 13109 run main.go",
+    "server": "go run main.go"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
