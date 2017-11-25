@@ -1,0 +1,17 @@
+{
+    "parser": "babel-eslint",
+    "extends": "standard",
+    "rules": {
+      "key-spacing": [2, {
+        "singleLine": {
+          "beforeColon": false,
+          "afterColon": true
+        },
+        "multiLine": {
+          "align": "colon",
+          "beforeColon": true,
+          "afterColon": true
+        }
+      }]
+    }
+}
