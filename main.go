@@ -1,20 +1,10 @@
 package main
 
 import (
-	"net/http"
-
-	"github.com/gin-gonic/gin"
+	"github.com/wangsongiam/go-react-redux-starter/server"
 )
 
 func main() {
-	router := gin.Default()
-	router.LoadHTMLGlob("./server/templates/*")
-	//router.LoadHTMLFiles("templates/template1.html", "templates/template2.html")
-	router.GET("/", func(c *gin.Context) {
-		c.HTML(http.StatusOK, "index.tmpl", gin.H{
-			"title": "Main website",
-		})
-	})
-
-	router.Run(":8080")
+	s := server.NewServer(8990)
+	s.Run()
 }

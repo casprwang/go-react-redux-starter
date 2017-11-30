@@ -1,6 +1,9 @@
 {
     "parser": "babel-eslint",
     "extends": "standard",
+    "plugins": [
+      "react"
+    ],
     "rules": {
       "key-spacing": [2, {
         "singleLine": {
@@ -12,6 +15,7 @@
           "beforeColon": true,
           "afterColon": true
         }
-      }]
+      }],
+      "react/self-closing-comp": 1
     }
 }
