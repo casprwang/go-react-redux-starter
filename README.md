@@ -1,4 +1,5 @@
 # go-react-redux-starter
+Use go backed with react and redux
 
 ### Requirements
 * Node.js (8+)
