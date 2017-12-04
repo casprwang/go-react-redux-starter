@@ -6,6 +6,7 @@
 
 ### Installation
 `go get github.com/wangsongiam/go-react-redux-starter`
+`yarn`
 
 ### Scripts
 * `yarn dev-webpack`: run frontend with webpack
