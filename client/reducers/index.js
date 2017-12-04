@@ -1,4 +1,4 @@
-import { REFRESH_RESULT } from '../actions/constants.js'
+import { REFRESH_RESULT } from '../actions/'
 
 export default (
   state = {
@@ -6,8 +6,11 @@ export default (
   },
   action
 ) => {
-  let copy = Object.assign({}, state)
-  let { type, content } = action
+  const copy = {
+    ...state
+  }
+
+  const { type, content } = action
 
   switch (type) {
     case REFRESH_RESULT:
@@ -15,7 +18,7 @@ export default (
       break
 
     default:
-      return state
+      copy.result = null
   }
 
   console.log(copy.result)

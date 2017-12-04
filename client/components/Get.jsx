@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { func } from 'prop-types';
-import { fetchSomething } from '../actions'
+import { func } from 'prop-types'
+import { fetchSomething } from '../actions/'
 
-const Home = ({ fetchSomething }) => {
+const Get = ({ fetchSomething, ...rest }) => {
   let key, value
+
   return (
     <div>
-      <input placeholder="key" ref={node => (key = node)} />
-      <input placeholder="value" ref={node => (value = node)} />
+      <input placeholder="key" ref={input => (key = input)} />
+      <input placeholder="value" ref={input => (value = input)} />
 
       <button
         onClick={() => {
@@ -23,10 +24,10 @@ const Home = ({ fetchSomething }) => {
   )
 }
 
-Home.propTypes = {
-  fetchSomething: func.isRequired
+Get.propTypes = {
+  fetchSomething : func.isRequired
 }
 
 const mapDispatchToProps = { fetchSomething }
 
-export default connect(null, mapDispatchToProps)(Home)
+export default connect(null, mapDispatchToProps)(Get)

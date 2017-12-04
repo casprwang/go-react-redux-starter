@@ -7,14 +7,14 @@
   "author": "wangsongiam <wangsongiam@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "webpack-dev": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
-    "server-dev": "gin --port 1111 --appPort 13109 run main.go",
-    "server": "go run main.go"
+    "dev-webpack": "./node_modules/.bin/webpack-dev-server --config webpack.config.dev.js",
+    "dev-server": "gin --port 8990 --appPort 13110 run main.go"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.0.2",
     "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.11.0",
@@ -33,7 +33,7 @@
     "history": "^4.7.2",
     "jquery": "^3.2.1",
     "prop-types": "^15.6.0",
-    "react": "^16.1.1",
+    "react": "^16.2.0",
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
